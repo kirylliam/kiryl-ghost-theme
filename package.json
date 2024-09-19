@@ -79,10 +79,15 @@
                 "type": "select",
                 "options": ["Classic", "Typographic", "Parallax"],
                 "default": "Classic",
-                "group": "homepage"
+                "group": "homepage"  
+            },
+            "show_subscribe_on_homepage": {
+                "type": "boolean",
+                "default": false,
+                "group": "homepage",
+                "description": "Show subscription form on the homepage"
             }
-        }
-    },
+        },
     "scripts": {
         "dev": "gulp",
         "test": "gscan .",
@@ -105,4 +110,5 @@
         "postcss-easy-import": "4.0.0",
         "pump": "3.0.2"
     }
+}
 }

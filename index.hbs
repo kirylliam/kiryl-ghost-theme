@@ -24,7 +24,8 @@
                 about.classList.add('initialized');
             })();
         </script>
-        <div class="gh-about-content">
+        
+                <div class="gh-about-content">
             <div class="gh-about-content-inner">
                 {{#if @custom.primary_header}}
                     <h1 class="gh-about-primary">{{{@custom.primary_header}}}</h1>
@@ -32,13 +33,19 @@
                 {{#if @custom.secondary_header}}
                     <p class="gh-about-secondary">{{{@custom.secondary_header}}}</p>
                 {{/if}}
-                {{#if @site.members_enabled}}
-                    {{#unless @member}}
-                        <div class="gh-subscribe-input" data-portal>
-                            jamie@example.com
-                            <span class="gh-btn gh-primary-btn">Subscribe</span>
-                        </div>
-                    {{/unless}}
+            {{!-- Show subscribe form based on custom setting.
+            This can be toggled in Ghost Admin > Theme Settings > Homepage.
+            The setting is defined in package.json as 'show_subscribe_on_homepage'.
+            --}}
+                {{#if @custom.show_subscribe_on_homepage}}
+                    {{#if @site.members_enabled}}
+                        {{#unless @member}}
+                            <div class="gh-subscribe-input" data-portal>
+                                jamie@example.com
+                                <span class="gh-btn gh-primary-btn">Subscribe</span>
+                            </div>
+                        {{/unless}}
+                    {{/if}}
                 {{/if}}
             </div>
         </div>
