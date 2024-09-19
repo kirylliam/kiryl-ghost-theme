@@ -86,7 +86,13 @@
                 "default": false,
                 "group": "homepage",
                 "description": "Show subscription form on the homepage"
-            }
+            },
+            "show_header_buttons": {
+                "type": "boolean",
+                "default": true,
+                "group": "header",
+                "description": "Show Sign in and Subscribe buttons in the header"
+  }
         },
     "scripts": {
         "dev": "gulp",
