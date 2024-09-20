@@ -92,8 +92,34 @@
                 "default": true,
                 "group": "header",
                 "description": "Show Sign in and Subscribe buttons in the header"
-  }
-        },
+            },
+                "show_social_icons": {
+                "type": "boolean",
+                "default": true,
+                "group": "header",
+                "description": "Show social icons in the header"
+            },
+                "linkedin_url": {
+                "type": "text",
+                "group": "header",
+                "description": "LinkedIn URL"
+            },
+                "facebook_url": {
+                "type": "text",
+                "group": "header",
+                "description": "Facebook URL"
+            },
+                "x_url": {
+                "type": "text",
+                "group": "header",
+                "description": "X (Twitter) URL"
+            },
+                "github_url": {
+                "type": "text",
+                "group": "header",
+                "description": "GitHub URL"
+            }
+                  },
     "scripts": {
         "dev": "gulp",
         "test": "gscan .",

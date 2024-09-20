@@ -65,6 +65,34 @@
             </nav>
 
               <div class="gh-head-actions">
+ 
+ <!-- Header actions: social icons, search, and member actions -->
+ {{!-- Social media icons --}}
+ {{#if @custom.show_social_icons}}
+                <div class="gh-head-social">
+                    {{#if @custom.linkedin_url}}
+                        <a href="{{@custom.linkedin_url}}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    {{/if}}
+                    {{#if @custom.facebook_url}}
+                        <a href="{{@custom.facebook_url}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    {{/if}}
+                    {{#if @custom.x_url}}
+                        <a href="{{@custom.x_url}}" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    {{/if}}
+                    {{#if @custom.github_url}}
+                        <a href="{{@custom.github_url}}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    {{/if}}
+                </div>
+            {{/if}}
+
     {{#unless @site.members_enabled}}
         {{^match @custom.navigation_layout "Stacked"}}
             <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
