@@ -470,7 +470,7 @@ hr {
 }
 
 .has-typographic-feed .gh-card {
-    margin-top: clamp(8rem, 6rem + 6.25vw, 16rem);
+    margin-top: clamp(4rem, 3rem + 3.125vw, 8rem);
 }
 
 .has-typographic-feed .gh-card-title {
