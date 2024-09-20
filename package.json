@@ -118,6 +118,12 @@
                 "type": "text",
                 "group": "header",
                 "description": "GitHub URL"
+            },
+                "homepage_personal_bio": {
+                "type": "text",
+                "default": "Welcome to my personal site! I'm passionate about [your interests]. Here, I share my thoughts on [topics]. Feel free to explore and connect with me.",
+                "group": "homepage",
+                "description": "Your personal biography or site description displayed on the homepage"
             }
                   },
     "scripts": {
